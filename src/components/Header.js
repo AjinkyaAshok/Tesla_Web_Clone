@@ -58,6 +58,9 @@ function Header() {
         <li>
           <a href="#">The Boring Company</a>
         </li>
+        <li>
+          <a href="#">linkedin.com/in/ajinkyaa</a>
+        </li>
       </BurgerNav>
     </Container>
   );
