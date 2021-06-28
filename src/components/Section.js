@@ -66,12 +66,15 @@ const ItemHighlight = styled.div`
   }
 `;
 
-// const Buttons = styled.div``;
 
 const ButtonWrap = styled.div`
   text-align: center;
   padding-top: 27em;
 
+
+  @media (max-width: 600px) {
+    padding-bottom: 20px;
+  }
   button.orders {
     background-color: #333333;
     color: white;

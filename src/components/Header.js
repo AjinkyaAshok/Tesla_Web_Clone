@@ -90,19 +90,8 @@ const Menu = styled.div`
     font-weight: 500;
     padding: 0 20px;
     flex-wrap: nowrap;
-    /* &:hover {
-      background-color: grey;
-      /* backdrop-filter: unset; */
-    /* opacity: 50%; */
-    /* border:30px; */
-    /* border-radius: 16px; */
-    /* border-width:50px; */
-    /* transition: color 0.33s ease, background-color 0.33s ease; */
-    /* block-size: 30px; */
-    /* align-items: center; */
-    /* } */
   }
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     display: none;
   }
 `;
@@ -113,6 +102,10 @@ const RightMenu = styled.div`
   a {
     font-weight: 500;
     margin-right: 10px;
+  }
+
+  @media (max-width: 600px) {
+    margin-right: 72em;
   }
 `;
 
@@ -129,6 +122,10 @@ const BurgerNav = styled.div`
   list-style: none;
   transform: ${(props) => (props.show ? "translateX(0)" : "translateX(100%)")};
   transition: transform 0.4s;
+  @media (max-width: 600px) {
+    margin-right: 72em;
+    width: 200px;
+  }
   li {
     margin: 8px;
     padding: 15px 10px;
@@ -144,4 +141,6 @@ const CustomClose = styled(CloseIcon)``;
 const CloseWrap = styled.div`
   display: flex;
   justify-content: flex-end;
+  padding-top: 20px;
+  padding-right: 10px;
 `;
