@@ -51,6 +51,10 @@ function Home() {
         backgroundImg="accessories.jpg"
         leftBtnText="SHOP NOW"
         rightBtnText="EXISTING INVENTORY"
+        footer="Tesla © 2021 
+ 
+ linkedin.com/in/ajinkyaa
+"
       />
     </div>
   );

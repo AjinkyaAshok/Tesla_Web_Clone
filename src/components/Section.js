@@ -10,6 +10,7 @@ function Section({
   leftBtnText,
   rightBtnText,
   backgroundImg,
+  footer,
 }) {
   return (
     <Container bgImage={backgroundImg}>
@@ -27,6 +28,9 @@ function Section({
         </ButtonWrap>
         <DownArrow src="/images/down-arrow.svg" />
       </Fade>
+      <Footer>
+        <>{footer}</>
+      </Footer>
     </Container>
   );
 }
@@ -66,11 +70,9 @@ const ItemHighlight = styled.div`
   }
 `;
 
-
 const ButtonWrap = styled.div`
   text-align: center;
   padding-top: 27em;
-
 
   @media (max-width: 600px) {
     padding-bottom: 20px;
@@ -107,3 +109,8 @@ const DownArrow = styled.img`
   height: 40px;
   animation: animateDown infinite 1.5s;
 `;
+
+const Footer = styled.div`
+text-align: center;
+
+`
